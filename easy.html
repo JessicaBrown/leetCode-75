@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>LeetCode 75 - Easy</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+
+<body>
+    <div class="page-title">
+        LeetCode 75 - Easy
+        <div class="info">Answers in the console</div>
+        <div class="back-button">
+            <button onclick="location.href='index.html'">Back</button>
+        </div>
+    </div>
+    <div>
+        <h4>consoleLog1 - Merge Strings Alternately</h4>
+        You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1.
+        If a string is longer than the other, append the additional letters onto the end of the merged string.
+        <p class="how">find the length - loop through - merge into an empty array - return merged array</p>
+    </div>
+    <div>
+        <h4>consoleLog2 - Greatest Common Divisor of Strings</h4>
+        For two strings s and t, we say "t divides s" if and only if s = t + t + t + ... + t + t (i.e., t is concatenated with itself
+        one or more times). Given two strings str1 and str2, return the largest string x such that x divides both str1 and
+        str2.
+        <p class="how">1. check to see if string is divisable (must be able to concat and still be divisable) * AB and ABABAB works but
+            AB and ABZD does not
+            <br> 2. Euclidean Algorithm - Greatest Common Denominator is found with strings length
+            <br> 3. Use substring to pull out denominator
+        </p>
+    </div>
+
+    <div>
+        <h4>consoleLog3 - Kids With the Greatest Number of Candies</h4>
+        There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies
+        the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have. Return a boolean
+        array result of length n, where result[i] is true if, after giving the ith kid all the extraCandies, they will have
+        the greatest number of candies among all the kids, or false otherwise. Note that multiple kids can have the greatest
+        number of candies.
+        <p class="how">find largest number of candies in the array - loop through and add the candies - push true or false to empty array
+            and return array</p>
+    </div>
+
+    <div>
+        <h4>consoleLog4 - Can Place Flowers</h4>
+        You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in
+        adjacent plots. Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty,
+        and an integer n, return true if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers
+        rule and false otherwise.
+        <p class="how"> create a variable to keep track of how many you can plant - loop through flowerbed array - set variables prev,curr,next
+            to keep track of positions - create logic in loop to make sure no plants are on either side of the index to be
+            planted - if can plant add 1 to canPlant array and make that index in flowerbed a 1 - return true or false if
+            canPlant is >= to n</p>
+    </div>
+
+    <div>
+        <h4>consoleLog5 - Reverse Vowels of a String</h4>
+        Given a string s, reverse only all the vowels in the string and return it. The vowels are 'a', 'e', 'i', 'o', and 'u', and
+        they can appear in both lower and upper cases, more than once.
+        <p class="how">get array with all the vowels - use original array to replace to keep order - function in the replace pops off last
+            index of vow and replaces the first aeiou and so on
+
+        </p>
+    </div>
+
+</body>
+<script src="easy.js"></script>
+
+</html>
